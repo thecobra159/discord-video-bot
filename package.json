@@ -12,15 +12,22 @@
   "author": "thecobra159",
   "license": "MIT",
   "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "@types/yt-search": "^2.3.1",
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
+    "ffmpeg-static": "^4.4.0",
+    "yt-search": "^2.9.0",
     "ytdl-core": "^4.9.0"
   },
   "devDependencies": {
     "@types/node": "^16.4.2",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "ts-node": "^10.1.0",
