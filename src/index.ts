@@ -4,13 +4,17 @@ import { DiscordManager } from './class/DiscordManager'
 import { Commands } from './commands/commands'
 import { Github } from './commands/github'
 import { Help } from './commands/help'
+import { Leave } from './commands/leave'
 import { Ping } from './commands/ping'
+import { Play } from './commands/play'
+import { Stream } from './commands/stream'
 
 try {
   const { BOT_TOKEN, PREFIX } = process.env
   const manager = new DiscordManager()
   const client = manager.client
   const commands = manager.commands
+  let server = {}
 
   const commandFiles = fs.readdirSync('./src/commands/')
 
@@ -50,6 +54,15 @@ try {
           break;
         case 'commands':
           Commands.execute(msg, args)
+          break;
+        case 'play':
+          Play.execute(msg, args)
+          break;
+        case 'stream':
+          Stream.execute(msg, args)
+          break;
+        case 'leave':
+          Leave.execute(msg, args)
           break;
       }
     })
