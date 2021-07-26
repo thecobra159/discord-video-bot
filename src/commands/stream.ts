@@ -21,7 +21,7 @@ export const Stream: Command = {
       !permissions.has('SPEAK') ||
       !permissions.has('STREAM')
     ) {
-      return msg.channel.send("You dont't have permission to call me! :cry:")
+      return msg.channel.send('You dont\'t have permission to call me! :cry:')
     }
 
     if (!args.length) {

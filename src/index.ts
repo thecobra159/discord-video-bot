@@ -14,7 +14,7 @@ try {
   const manager = new DiscordManager()
   const client = manager.client
   const commands = manager.commands
-  let server = {}
+  const server = {}
 
   const commandFiles = fs.readdirSync('./src/commands/')
 
@@ -45,25 +45,25 @@ try {
       switch (cmd) {
         case 'ping':
           Ping.execute(msg, args)
-          break;
+          break
         case 'help':
           Help.execute(msg, args)
-          break;
+          break
         case 'github':
           Github.execute(msg, args)
-          break;
+          break
         case 'commands':
           Commands.execute(msg, args)
-          break;
+          break
         case 'play':
           Play.execute(msg, args)
-          break;
+          break
         case 'stream':
           Stream.execute(msg, args)
-          break;
+          break
         case 'leave':
           Leave.execute(msg, args)
-          break;
+          break
       }
     })
 

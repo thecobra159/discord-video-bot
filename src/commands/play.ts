@@ -17,7 +17,7 @@ export const Play: Command = {
 
     const permissions = voiceChannel.permissionsFor(msg.client.user)
     if (!permissions.has('CONNECT') || !permissions.has('SPEAK')) {
-      return msg.channel.send("You dont't have permission to call me! :cry:")
+      return msg.channel.send('You dont\'t have permission to call me! :cry:')
     }
 
     if (!args.length) {
