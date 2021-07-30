@@ -1,5 +1,6 @@
-import Discord from 'discord.js'
+import Discord, { Guild } from 'discord.js'
 import { Command } from '../interfaces/command'
+import { MusicQueue } from '../interfaces/MusicQueue'
 
 export class DiscordManager {
   client: Discord.Client
